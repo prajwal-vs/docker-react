@@ -1,11 +1,9 @@
-language: generic
-
 sudo: required
 
 services:
   - docker
 
-defore_install:
+before_install:
   - docker build -t prajwal-wale/docker-react -f Dockerfile.dev .
 
 script:
